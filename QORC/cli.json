@@ -1,0 +1,153 @@
+{
+  "description": "QORC reproduction runner",
+  "arguments": [
+    {
+      "flags": ["--xp-type"],
+      "help": "Experiment type (qorc or rff)",
+      "type": "str",
+      "choices": ["qorc", "rff"],
+      "default": null,
+      "apply": {"kind": "config_path", "path": "xp_type"}
+    },
+    {
+      "flags": ["--n-photons"],
+      "help": "Number of photons (qorc)",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "n_photons"}
+    },
+    {
+      "flags": ["--n-modes"],
+      "help": "Number of modes (qorc)",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "n_modes"}
+    },
+    {
+      "flags": ["--fold-index"],
+      "help": "Fold index for dataset split",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "fold_index"}
+    },
+    {
+      "flags": ["--n-fold"],
+      "help": "Number of folds",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "n_fold"}
+    },
+    {
+      "flags": ["--epochs"],
+      "help": "Number of training epochs",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "n_epochs"}
+    },
+    {
+      "flags": ["--batch-size"],
+      "help": "Batch size",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "batch_size"}
+    },
+    {
+      "flags": ["--learning-rate"],
+      "help": "Learning rate",
+      "type": "float",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "learning_rate"}
+    },
+    {
+      "flags": ["--reduce-lr-patience"],
+      "help": "Reduce LR on plateau patience",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "reduce_lr_patience"}
+    },
+    {
+      "flags": ["--reduce-lr-factor"],
+      "help": "Reduce LR on plateau factor",
+      "type": "float",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "reduce_lr_factor"}
+    },
+    {
+      "flags": ["--num-workers"],
+      "help": "DataLoader workers",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "num_workers"}
+    },
+    {
+      "flags": ["--pin-memory"],
+      "help": "Enable pinned memory for DataLoader",
+      "type": "bool",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "pin_memory"}
+    },
+    {
+      "flags": ["--f-out-weights"],
+      "help": "Checkpoint filename for linear head",
+      "type": "str",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "f_out_weights"}
+    },
+    {
+      "flags": ["--b-no-bunching"],
+      "help": "Disable bunching constraint",
+      "type": "bool",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "b_no_bunching"}
+    },
+    {
+      "flags": ["--b-use-tensorboard"],
+      "help": "Enable TensorBoard logging",
+      "type": "bool",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "b_use_tensorboard"}
+    },
+    {
+      "flags": ["--f-out-results-training-csv"],
+      "help": "Filename for aggregated results",
+      "type": "str",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "f_out_results_training_csv"}
+    },
+    {
+      "flags": ["--n-rff-features"],
+      "help": "Number of RFF features",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "n_rff_features"}
+    },
+    {
+      "flags": ["--sigma"],
+      "help": "RBF kernel bandwidth",
+      "type": "float",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "sigma"}
+    },
+    {
+      "flags": ["--regularization-c"],
+      "help": "Regularization strength C",
+      "type": "float",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "regularization_c"}
+    },
+    {
+      "flags": ["--b-optim-via-sgd"],
+      "help": "Use SGD for optimization",
+      "type": "bool",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "b_optim_via_sgd"}
+    },
+    {
+      "flags": ["--max-iter-sgd"],
+      "help": "Maximum SGD iterations",
+      "type": "int",
+      "default": null,
+      "apply": {"kind": "config_path", "path": "max_iter_sgd"}
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+    "description" : "Default parameters",
+
+    "xp_type" : "qorc",
+
+    "n_photons" : 2,
+    "n_modes"   : 10,
+    "seed"      : 42,
+    "fold_index": 0,
+
+    "n_epochs": 100,
+    "batch_size": 100,
+    "f_out_results_training_csv" : "f_out_results_training_qorc.csv",
+    "device": "cpu",
+    "qpu_device": "none",
+    "qpu_device_nsample": 10000,
+
+    "dataset_name" : "mnist",
+    "n_fold": 5,
+    "dataset_truncate": 0,
+
+    "learning_rate": 0.05,
+
+    "reduce_lr_patience": 10,
+    "reduce_lr_factor": 0.5,
+
+    "num_workers": 0,
+    "pin_memory": false,
+
+    "f_out_weights": "f_weights_out.pth",
+
+    "b_no_bunching" : false,
+
+    "b_use_tensorboard": false,
+
+    "n_rff_features" : [10, 20, 30, 120, 220, 364, 560, 1140, 2024, 4060, 4960, 9880],
+    "sigma" : 10,
+    "regularization_c" : 1.0,
+
+    "b_optim_via_sgd" : true,
+    "max_iter_sgd" : 1000,
+
+    "outdir" : "outdir"
+
+}
+
