@@ -15,3 +15,5 @@ copied from the MerlinQuantum `reproduced_papers` project.
   experiment configs (`configs/`), tests, and result artifacts.
 
 See `QORC/README.md` for the original project documentation and run instructions.
+
+Quandela Paper about QRC: https://arxiv.org/pdf/2605.10471
