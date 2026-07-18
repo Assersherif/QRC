@@ -1,0 +1,22 @@
+{
+  "scenario": "smurf",
+  "description": "DoS variant 'smurf' held out of train; recognise a NEW variant of a family the model has otherwise seen.",
+  "task": "binary is_attack (novelty detection)",
+  "held_out_labels": [
+    "smurf"
+  ],
+  "rng_seed": 42,
+  "format": "raw NSL-KDD features (41) + label, category, is_attack. No preprocessing.",
+  "counts": {
+    "train_total": 106491,
+    "train_normal": 50507,
+    "train_attack": 55984,
+    "test_total": 19482,
+    "test_normal": 16836,
+    "test_attack_held_out": 2646
+  },
+  "files": {
+    "train": "train.csv",
+    "test": "test.csv"
+  }
+}

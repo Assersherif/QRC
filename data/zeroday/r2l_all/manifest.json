@@ -1,0 +1,36 @@
+{
+  "scenario": "r2l_all",
+  "description": "Entire R2L category held out; hard application-layer attacks, typically low recall \u2014 probes the limits.",
+  "task": "binary is_attack (novelty detection)",
+  "held_out_labels": [
+    "guess_passwd",
+    "ftp_write",
+    "imap",
+    "phf",
+    "multihop",
+    "warezmaster",
+    "warezclient",
+    "spy",
+    "xlock",
+    "xsnoop",
+    "snmpguess",
+    "snmpgetattack",
+    "httptunnel",
+    "sendmail",
+    "named"
+  ],
+  "rng_seed": 42,
+  "format": "raw NSL-KDD features (41) + label, category, is_attack. No preprocessing.",
+  "counts": {
+    "train_total": 108142,
+    "train_normal": 50507,
+    "train_attack": 57635,
+    "test_total": 17831,
+    "test_normal": 16836,
+    "test_attack_held_out": 995
+  },
+  "files": {
+    "train": "train.csv",
+    "test": "test.csv"
+  }
+}

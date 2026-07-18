@@ -1,0 +1,27 @@
+{
+  "scenario": "probe_all",
+  "description": "Entire Probe category held out; detect an attack CONCEPT (port-scanning) never seen in training. Headline scenario.",
+  "task": "binary is_attack (novelty detection)",
+  "held_out_labels": [
+    "satan",
+    "ipsweep",
+    "nmap",
+    "portsweep",
+    "mscan",
+    "saint"
+  ],
+  "rng_seed": 42,
+  "format": "raw NSL-KDD features (41) + label, category, is_attack. No preprocessing.",
+  "counts": {
+    "train_total": 97481,
+    "train_normal": 50507,
+    "train_attack": 46974,
+    "test_total": 28492,
+    "test_normal": 16836,
+    "test_attack_held_out": 11656
+  },
+  "files": {
+    "train": "train.csv",
+    "test": "test.csv"
+  }
+}

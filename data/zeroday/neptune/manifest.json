@@ -1,0 +1,22 @@
+{
+  "scenario": "neptune",
+  "description": "'neptune' (SYN flood, ~90% of DoS) held out; extreme generalisation test \u2014 train keeps almost no DoS.",
+  "task": "binary is_attack (novelty detection)",
+  "held_out_labels": [
+    "neptune"
+  ],
+  "rng_seed": 42,
+  "format": "raw NSL-KDD features (41) + label, category, is_attack. No preprocessing.",
+  "counts": {
+    "train_total": 67923,
+    "train_normal": 50507,
+    "train_attack": 17416,
+    "test_total": 58050,
+    "test_normal": 16836,
+    "test_attack_held_out": 41214
+  },
+  "files": {
+    "train": "train.csv",
+    "test": "test.csv"
+  }
+}
